@@ -1,0 +1,14 @@
+package jo.secondstep.session2;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Students one = new Students();
+		one.setStd_name();
+		one.setSubjects_num();
+		one.setSubjects_names();
+		one.setSubjects_marks();
+		one.printStuedentInfo();
+	}
+
+}

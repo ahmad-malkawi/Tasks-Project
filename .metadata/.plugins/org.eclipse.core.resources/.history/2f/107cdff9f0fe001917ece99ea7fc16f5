@@ -1,0 +1,47 @@
+package jo.secondstep.session2;
+
+import java.util.Scanner;
+
+public class Students {
+	String name;
+	int subjects_num;
+	Subject [] subjects;
+	private Scanner reder;
+	public Students() {
+		super();
+		reder = new Scanner(System.in);
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName() {
+		String student_name = reder.nextLine();
+		this.name = student_name;
+	}
+	public int getSubjects_num() {
+		return subjects_num;
+	}
+	public void setSubjects_num() {
+		int subjects_num = reder.nextInt();
+		this.subjects_num = subjects_num;
+		this.subjects = new Subject [this.subjects_num];
+	}
+	public Subject[] getSubjects() {
+		return subjects;
+	}
+	public void setSubjects_names() {
+		for (int i = 0 ; i < this.subjects_num ; i++) {
+			String subject_name = reder.nextLine();
+			this.subjects [i].setName(subject_name);
+		}
+	}
+	
+	public void setSubjects_marks() {
+		for (int i = 0 ; i < this.subjects_num ; i++) {
+			int subject_mark = reder.nextInt();
+			this.subjects [i].setMark(subject_mark);
+		}
+	}
+	
+	
+}

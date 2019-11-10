@@ -1,0 +1,21 @@
+package jo.secondstep.session2;
+
+public class Main {
+	public static void main(String[] args) {
+		String a = "ahmad";
+		System.out.println(Character.toUpperCase(a.charAt(1)));
+		
+		if ((int)a.charAt(2)+1 == (int)'m') {
+			System.out.println("hi");
+        }
+		
+		Student one = new Student();
+		one.setStd_name();
+		one.setStd_class();
+		one.setSubjects_num();
+		one.setSubjects_names();
+		one.setSubjects_marks();
+		one.printStuedentInfo();
+		
+	}
+}

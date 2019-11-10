@@ -1,0 +1,13 @@
+1572788440084	Rename type 'taskone'
+1572858909945	Rename package 'session2'
+1572859862286	Rename type 'Subjects'
+1572861889641	Convert local variable 'reder' to field
+1572872446201	Delete element
+1572874432457	Rename type 'Students'
+1572948502662	Convert local variable 'in' to field
+1572948517768	Convert local variable 'steps_num_p2' to field
+1572948526906	Convert local variable 'row' to field
+1572948531108	Convert local variable 'colomn' to field
+1572948535310	Convert local variable 'steps_num_p1' to field
+1572951643275	Rename package 'jo.secondstep.session3'
+1573117654027	Infer generic type arguments

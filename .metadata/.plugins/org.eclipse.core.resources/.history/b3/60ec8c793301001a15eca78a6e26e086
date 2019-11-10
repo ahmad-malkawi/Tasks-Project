@@ -1,0 +1,49 @@
+package jo.secondstep.session2;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		int n; String password;
+		Scanner in = new Scanner(System.in);
+		n= in.nextInt();
+		password=in.next();
+		boolean upperFlag = true;
+        boolean lowerFlag = true;
+        boolean digitFlag = true;
+        boolean sympolFlag = true;
+        int missed = 4 ;
+        for(int i = 0;i<n;i++){
+            if (Character.isUpperCase(password.charAt(i)) && upperFlag){
+                upperFlag = false;
+                missed--;
+                i=((i < n-1) ? i+1 :i);
+            }
+            if (Character.isLowerCase(password.charAt(i)) && lowerFlag){
+                lowerFlag = false;
+                missed--;
+                i=((i < n-1) ? i+1 :i);
+            }
+            if (Character.isDigit(password.charAt(i)) && digitFlag){
+                digitFlag = false;
+                missed--;
+                i=((i < n-1) ? i+1 :i);
+            }
+            if (!Character.isLetter(password.charAt(i)) && !Character.isDigit(password.charAt(i)) && sympolFlag){
+                sympolFlag = false;
+                missed--;
+                i=((i < n-1) ? i+1 :i);
+            }
+        }
+        System.out.println(Math.max (missed,(6-n)));
+		Student one = new Student();
+		one.setStd_name();
+		one.setStd_class();
+		one.setSubjects_num();
+		one.setSubjects_names();
+		one.setSubjects_marks();
+		one.printStuedentInfo();
+		
+	}
+}

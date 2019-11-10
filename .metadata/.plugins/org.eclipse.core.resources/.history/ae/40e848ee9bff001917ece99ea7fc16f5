@@ -1,0 +1,21 @@
+package jo.secondstep.session2;
+
+public class Main {
+	public static void main(String[] args) {
+		
+		int luck = 10;
+		 if((luck>10 ? luck++: --luck)<10) {
+		 System.out.print("Bear");
+		 } if(luck<10) System.out.print("Shark");
+		
+		
+		Student one = new Student();
+		one.setStd_name();
+		one.setStd_class();
+		one.setSubjects_num();
+		one.setSubjects_names();
+		one.setSubjects_marks();
+		one.printStuedentInfo();
+		
+	}
+}

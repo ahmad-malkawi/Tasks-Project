@@ -1,0 +1,79 @@
+package jo.secondstep.session2;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Students {
+	String name;
+	int subjects_num;
+	ArrayList<Subject> subjects;
+	Scanner reder;
+	double avg;
+	int marks_sum;
+
+	public Students() {
+		super();
+		this.reder = new Scanner(System.in);
+		this.marks_sum = 0;
+		this.subjects_num = 0;
+		this.subjects = new ArrayList<Subject>();
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName() {
+		System.out.print("Please enter student name: ");
+		String student_name = reder.next();
+		this.name = student_name;
+	}
+
+	public int getSubjects_num() {
+		return subjects_num;
+	}
+
+	public void setSubjects_num() {
+		System.out.print("Please enter subjects number: ");
+		int subjects_num = reder.nextInt();
+		this.subjects_num = subjects_num;
+
+	}
+
+	public void setSubjects_names() {
+		for (int i = 0; i < this.subjects_num; i++) {
+			this.subjects.add(new Subject());
+			System.out.print("Please enter the Subject number("+(i+1)+") name: ");
+			String subject_name = reder.next();
+			this.subjects.get(i).setName(subject_name);
+		}
+	}
+
+	public void setSubjects_marks() {
+		for (int i = 0; i < this.subjects_num; i++) {
+			System.out.print("Please enter the student mark in "+this.subjects.get(i).getName()+": ");
+			int subject_mark = reder.nextInt();
+			if (subject_mark >= 0 && subject_mark <= 100) {
+				this.subjects.get(i).setMark(subject_mark);
+				marks_sum += subject_mark;
+			} else {
+				System.out.println("it is invalid mark the mark should between 0 to 100 please");
+				i--;
+			}
+		}
+	}
+
+	public double calculatAvg() {
+		return marks_sum / subjects_num;
+	}
+
+	public void printStuedentInfo() {
+		System.out.println("the student name is: " + this.name);
+		System.out.println("the number of subject(s) is: " + this.subjects_num);
+		for (int i = 0; i < this.subjects_num; i++) {
+			System.out.println("the student mark in \"" + this.subjects.get(i).getName() + "\" is: "
+					+ this.subjects.get(i).getMark());
+		}
+		System.out.println("the student mark average is " + calculatAvg());
+	}
+}

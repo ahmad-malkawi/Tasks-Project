@@ -1,0 +1,17 @@
+package jo.secondstep.session2;
+
+
+public class Main {
+	static boolean [] isfound = new boolean [26];
+	public static void main(String[] args) {
+		System.out.println(isfound[0]);
+		Student one = new Student();
+		one.setStd_name();
+		one.setStd_class();
+		one.setSubjects_num();
+		one.setSubjects_names();
+		one.setSubjects_marks();
+		one.printStuedentInfo();
+
+	}
+}
