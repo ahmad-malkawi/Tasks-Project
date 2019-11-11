@@ -1,0 +1,25 @@
+package jo.secondstep.session6;
+
+public class Restorant implements FoodProvider {
+	private String Name;
+	private String location;
+	private String telephon;
+	public String getName() {
+		return Name;
+	}
+	public void setName(String name) {
+		Name = name;
+	}
+	public String getLocation() {
+		return location;
+	}
+	public void setLocation(String location) {
+		this.location = location;
+	}
+	public String getTelephon() {
+		return telephon;
+	}
+	public void setTelephon(String telephon) {
+		this.telephon = telephon;
+	}
+}

@@ -1,0 +1,74 @@
+package jo.secondstep.session6;
+
+import java.util.ArrayList;
+
+public class Restorant implements FoodProvider {
+	private String Name;
+	private String location;
+	private String telephon;
+	private ArrayList<Employee> restorantEmployees;
+	private ArrayList<Menu> restorantMenu;
+
+	public Restorant(String name, String location, String telephon, ArrayList<Employee> restorantEmployees,
+			ArrayList<Menu> restorantMenu) {
+		Name = name;
+		this.location = location;
+		this.telephon = telephon;
+		this.restorantEmployees = restorantEmployees;
+		this.restorantMenu = restorantMenu;
+	}
+
+	@Override
+	public String getName() {
+		return Name;
+	}
+
+	@Override
+	public void setName(String name) {
+		Name = name;
+	}
+
+	@Override
+	public String getLocation() {
+		return location;
+	}
+
+	@Override
+	public void setLocation(String location) {
+		this.location = location;
+	}
+
+	@Override
+	public String getTelephon() {
+		return telephon;
+	}
+
+	@Override
+	public void setTelephon(String telephon) {
+		this.telephon = telephon;
+	}
+
+	@Override
+	public void addEmployee(String name, String dateOfPirth, String employeeID, String role) {
+		restorantEmployees.add(new Employee(name, dateOfPirth, employeeID, role));
+
+	}
+
+	@Override
+	public void addMenuItem(String name, double price) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void orderRequest(ArrayList<String> itemsName) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void checkGenerator() {
+		// TODO Auto-generated method stub
+
+	}
+}

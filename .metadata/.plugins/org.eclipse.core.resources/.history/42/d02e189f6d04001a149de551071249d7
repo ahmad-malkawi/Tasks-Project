@@ -1,0 +1,5 @@
+package jo.secondstep.session6;
+
+public interface FoodProvider {
+
+}
