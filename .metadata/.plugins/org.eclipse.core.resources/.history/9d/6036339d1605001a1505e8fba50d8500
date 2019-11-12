@@ -34,7 +34,7 @@ public class Customer extends Person {
 
 	private Scanner in = new Scanner(System.in);
 
-	public void makeOrder(FoodProvider restorant) {
+	public void makeOrder(Restorant restorant) {
 		ArrayList<Menu> resMenu = restorant.getMenuItems();
 		int resMenuSize = resMenu.size();
 		System.out.println("******The " + restorant.getName() + "s Restorant Menu*******");
