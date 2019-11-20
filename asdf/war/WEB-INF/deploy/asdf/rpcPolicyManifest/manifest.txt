@@ -1,0 +1,3 @@
+# Module asdf
+# RPC service class, partial path of RPC policy file
+asd.client.GreetingService, 6EBE2C679DF1DFD50157A85E25A1392E.gwt.rpc

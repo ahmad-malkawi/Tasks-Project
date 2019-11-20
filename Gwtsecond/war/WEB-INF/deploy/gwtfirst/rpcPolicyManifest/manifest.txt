@@ -1,0 +1,3 @@
+# Module gwtfirst
+# RPC service class, partial path of RPC policy file
+jo.SecondStep.sesion10.client.GreetingService, AB54E188E990CFE63D0EA5BC4257E9AA.gwt.rpc

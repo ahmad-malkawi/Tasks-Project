@@ -1,0 +1,14 @@
+<module rename-to = 'Gwtsecond'>
+   <!-- Inherit the core Web Toolkit stuff.                        -->
+   <inherits name = 'com.google.gwt.user.User'/>
+
+   <!-- Inherit the default GWT style sheet.                       -->
+   <inherits name = 'com.google.gwt.user.theme.clean.Clean'/>
+
+   <!-- Specify the app entry point class.                         -->
+   <entry-point class = 'com.tutorialspoint.client.HelloWorld'/>
+
+   <!-- Specify the paths for translatable code                    -->
+   <source path = 'client'/>
+
+</module>

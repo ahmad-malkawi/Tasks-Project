@@ -5,6 +5,11 @@ import java.util.ArrayList;
 public class Main {
 
 	public static void main(String[] args) {
+		 boolean x = true, z = true;
+	int y = 20;
+	 x = (y != 10) ^ (z=false);
+	System.out.println(x+", "+y+", "+z);
+		
 		FoodProvider restorant = new Restorant("Ahmad", "Irbid-Second Step", "0779204320" , new ArrayList<Employee>(), new ArrayList<Menu> ());
 		restorant.addEmployee("ahmad", "25/3/1997", 19028, "Manager");
 		restorant.addMenuItem("arab_shawerma", 1.5);

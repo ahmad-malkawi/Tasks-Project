@@ -6,8 +6,21 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="empID"/>
+		<item key="selection" value="get(Stri"/>
 		<list key="findhistory">
+			<item value="get(Stri"/>
+			<item value="get(Strinr"/>
+			<item value="get(Str)"/>
+			<item value="get()"/>
+			<item value="get"/>
+			<item value="close"/>
+			<item value="String"/>
+			<item value="String*[]"/>
+			<item value="ClickHandler"/>
+			<item value="div"/>
+			<item value="de"/>
+			<item value="dev"/>
+			<item value="vev"/>
 			<item value="empID"/>
 			<item value="index"/>
 		</list>

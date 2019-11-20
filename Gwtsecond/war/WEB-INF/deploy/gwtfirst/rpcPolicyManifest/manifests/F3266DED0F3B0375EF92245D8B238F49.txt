@@ -1,0 +1,2 @@
+serviceClass: jo.SecondStep.sesion10.client.GreetingService
+path: AB54E188E990CFE63D0EA5BC4257E9AA.gwt.rpc
