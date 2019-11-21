@@ -6,8 +6,12 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="get(Stri"/>
+		<item key="selection" value="cnstantRomanNumerals"/>
 		<list key="findhistory">
+			<item value="roman_numerals"/>
+			<item value="cnstantRomanNumerals"/>
+			<item value="&apos;"/>
+			<item value="&quot;"/>
 			<item value="get(Stri"/>
 			<item value="get(Strinr"/>
 			<item value="get(Str)"/>
@@ -19,12 +23,11 @@
 			<item value="ClickHandler"/>
 			<item value="div"/>
 			<item value="de"/>
-			<item value="dev"/>
-			<item value="vev"/>
-			<item value="empID"/>
-			<item value="index"/>
 		</list>
 		<list key="replacehistory">
+			<item value="cnstantRomanNumerals"/>
+			<item value="&quot;"/>
+			<item value="&apos;"/>
 			<item value="employeeID"/>
 		</list>
 	</section>
